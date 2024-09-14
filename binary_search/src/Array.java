@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-public class Main {
+public class Array {
 
     public static void main(String[] args){
         //int[] originalArray = {1, 2, 3,4,5};
