@@ -9,7 +9,7 @@ public class Recursion {
         counterdown(10);
         System.out.println();
         System.out.println(factorial(1));
-        List<Integer> sumar  = List.of(-11, -2, -233, -42, 5,-6,-17,-82,-164);
+        List<Integer> sumar  = List.of(-11, -2, -233, 18, 5,-6,17,-82,-164);
         System.out.println(sumArray(sumar));
         System.out.println(countItems(sumar));
         System.out.println(maxElement(sumar,0));
@@ -68,8 +68,7 @@ public class Recursion {
             if(list.get(0) > list.get(1)) return list.get(0);
             return list.get(1);
         }
-        int subMax = max(list.subList(1,list.size()));
-        if(list.get(0)> subMax) return list.get(0);
-        return subMax;
+        if(list.get(0)> max(list.subList(1,list.size()))) return list.get(0);
+        return max(list.subList(1,list.size()));
     }
 }
