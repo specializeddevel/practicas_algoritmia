@@ -63,6 +63,8 @@ public class Recursion {
         }
     }
 
+
+    //TODO you must review this exercise to undertand it well
     public static int max(List<Integer> list){
         if(list.size() == 2) {
             if(list.get(0) > list.get(1)) return list.get(0);

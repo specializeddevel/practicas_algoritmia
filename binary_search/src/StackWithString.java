@@ -20,13 +20,13 @@ public class StackWithString {
             this.stack = ""; // La pila comienza vacía
         }
 
-        // Método para insertar un elemento en la pila
+        // Method para insertar un elemento en la pila
         public void push(char element) {
             stack += element; // Agrega el nuevo carácter al final del String
             System.out.println("Elemento " + element + " insertado.");
         }
 
-        // Método para quitar el elemento en la parte superior de la pila
+        // Method para quitar el elemento en la parte superior de la pila
         public char pop() {
             if (stack.isEmpty()) {
                 System.out.println("Pila vacía. No hay elementos para quitar.");
@@ -39,7 +39,7 @@ public class StackWithString {
             }
         }
 
-        // Método para ver el elemento en la parte superior de la pila sin quitarlo
+        // Method para ver el elemento en la parte superior de la pila sin quitarlo
         public char peek() {
             if (stack.isEmpty()) {
                 System.out.println("Pila vacía. No hay elementos.");
@@ -49,7 +49,7 @@ public class StackWithString {
             }
         }
 
-        // Método para verificar si la pila está vacía
+        // Method para verificar si la pila está vacía
         public boolean isEmpty() {
             return stack.isEmpty();
         }

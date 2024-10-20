@@ -11,7 +11,7 @@ public class StackWithArray {
         this.top = -1; // -1 indica que la pila está vacía
     }
 
-    // Método para insertar un elemento en la pila
+    // Method para insertar un elemento en la pila
     public void push(int element) {
         if (top == size - 1) {
             System.out.println("Pila llena. No se puede insertar.");
@@ -22,7 +22,7 @@ public class StackWithArray {
         }
     }
 
-    // Método para quitar el elemento en la parte superior de la pila
+    // Method para quitar el elemento en la parte superior de la pila
     public int pop() {
         if (top == -1) {
             System.out.println("Pila vacía. No hay elementos para quitar.");
@@ -35,7 +35,7 @@ public class StackWithArray {
         }
     }
 
-    // Método para ver el elemento en la parte superior de la pila sin quitarlo
+    // Method para ver el elemento en la parte superior de la pila sin quitarlo
     public int peek() {
         if (top == -1) {
             System.out.println("Pila vacía. No hay elementos.");
@@ -45,12 +45,12 @@ public class StackWithArray {
         }
     }
 
-    // Método para verificar si la pila está vacía
+    // Method para verificar si la pila está vacía
     public boolean isEmpty() {
         return top == -1;
     }
 
-    // Método para verificar si la pila está llena
+    // Method para verificar si la pila está llena
     public boolean isFull() {
         return top == size - 1;
     }
